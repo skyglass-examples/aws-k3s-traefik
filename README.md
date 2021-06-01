@@ -226,15 +226,15 @@ docker push test/user-management:1.0.0
 
 - create "**CNAME**" record with the name "**users.test.com**" and the value "**mtc-loadbalancer.com**"
 
-- go to "**kubernetes**" folder of this github repository
+- go to "**k3s-traefik**" folder of this github repository
 
-- Edit "**02-UserManagementMicroservice-Deployment.yml**": replace "**skyglass/user-management:1.0.0**" with the name of your docker image
+- Edit "**200-usermgmt.yaml**": replace "**skyglass/user-management:1.0.0**" with the name of your docker image
 
 - go back to "**terraform**" directory and run the following commands:
 ``` 
 export KUBECONFIG=./ks3/k3s.yaml
 
-kubectl apply -f ../kubernetes
+kubectl apply -f ../k3s-traefik
 ``` 
 
 - let's assume that the name of your "**CNAME**" record is "**users.test.com**" 
