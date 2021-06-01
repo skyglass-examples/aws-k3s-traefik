@@ -230,6 +230,8 @@ docker push test/user-management:1.0.0
 
 - Edit "**200-usermgmt.yaml**": replace "**skyglass/user-management:1.0.0**" with the name of your docker image
 
+- Edit "**0006-traefik-service.yaml**": set "**service.beta.kubernetes.io/aws-load-balancer-ssl-cert**" to cerfiticate_arn of your AWS Certificate
+
 - go back to "**terraform**" directory and run the following commands:
 ``` 
 export KUBECONFIG=./ks3/k3s.yaml
@@ -247,14 +249,18 @@ kubectl apply -f ../k3s-traefik
 
 - you should see successfully loaded "**Swagger UI**" page
 
+- go to "**https://users.test.com/whoami"
+
+- you should see successfully loaded "**WhoAmI**" page
+
 
 
 
 ### Congratulations! You sucessfully created Minimal Kubernetes Cluster on AWS with Terraform and K3S!
 ### Now you can deploy your own docker containers to this cluster with minimal costs from AWS!
 ### You significantly reduced your AWS bills by removing AWS EKS and NAT gateway!
-
-
+##### You implemented Traefik Ingress Controller, which acts as a Gateway Load Balancer for your microservices
+##### Now you can add any number of microservices to your K3S Kubernetes Cluster and use only one Gateway Load Balancer for all these microservice 
 
 
 ## Step-05: Clean-Up:
