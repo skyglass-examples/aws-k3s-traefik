@@ -1,0 +1,41 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: IngressClass
+metadata:
+  name: traefik-lb
+spec:
+  controller: traefik.io/ingress-controller
+
+---
+apiVersion: "networking.k8s.io/v1beta1"
+kind: "Ingress"
+metadata:
+  name: "traefik-usermgmt-ingress"
+spec:
+  ingressClassName: "traefik-lb"
+  rules:
+  - host: "keycloak.skycomposer.net"
+    http:
+      paths:
+      - path: "/usermgmt"
+        backend:
+          serviceName: "usermgmt"
+          servicePort: 80
+
+
+---
+apiVersion: "networking.k8s.io/v1beta1"
+kind: "Ingress"
+metadata:
+  name: "traefik-whoami-ingress"
+spec:
+  ingressClassName: "traefik-lb"
+  rules:
+  - host: "keycloak.skycomposer.net"
+    http:
+      paths:
+      - path: "/whoami"
+        backend:
+          serviceName: "whoami"
+          servicePort: 80
+
+          

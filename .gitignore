@@ -1,0 +1,12 @@
+bin/
+target/
+/.settings
+.classpath
+.project
+.springBeans
+.factorypath
+/terraform/.terraform.lock.hcl
+/terraform/k3s/k3s.yaml
+/terraform/k3s/k3s.yaml.eksctl.lock
+/terraform/.terraform
+/terraform/terraform.auto.tfvars
