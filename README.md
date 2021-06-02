@@ -23,7 +23,7 @@ REST API for **user management** microservice with **Swagger UI** is available o
 
 #### Access key and secret key
 
-- Before we do anything else, we’ll need to make a note of our new user’s keys. Click the Show link and copy and paste both the “**Access key ID**” and the “**Secret access key**” into a temporary file. We’ll use both of these later in this section with our automated pipeline. Be careful with this key material as it will give whoever has it an opportunity to create resources in your AWS environment—at your expense.
+- Before we do anything else, we’ll need to make a note of our new user’s keys. Click the Show link and copy and paste both the “**Access key ID**” and the “**Secret access key**” into a temporary file. We’ll use both of these later. Be careful with this key material as it will give whoever has it an opportunity to create resources in your AWS environment — at your expense.
 
 - Make sure you take note of the access key ID and the secret access key that were generated before you leave this screen. You’ll need them later.
 
@@ -72,7 +72,6 @@ The first thing we’ll do is make the ops-account user part of a new group call
 ```
 $ aws iam create-group --group-name Ops-Accounts
 ```
-$ aws iam create-group --group-name Ops-Accounts
 
 If this is successful, the AWS CLI will display the group that has been created:
 
