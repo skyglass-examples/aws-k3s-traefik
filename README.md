@@ -3,6 +3,9 @@
 REST API for user management microservice with swagger UI is available on 
 ### https://users.skycomposer.net/usermgmt/swagger-ui/index.html
 
+Whoami microservice is available on 
+### https://users.skycomposer.net/whoami
+
 # Microservices Deployment on AWS with Terraform and K3S:
 
 ## Step 01 - Setup terraform account on AWS 
@@ -226,11 +229,13 @@ docker push test/user-management:1.0.0
 
 - create "**CNAME**" record with the name "**users.test.com**" and the value "**mtc-loadbalancer.com**"
 
-- go to "**k3s-traefik**" folder of this github repository
+- go to "**k3s-traefik**" folder of this github repository:
 
 - Edit "**200-usermgmt.yaml**": replace "**skyglass/user-management:1.0.0**" with the name of your docker image
 
-- Edit "**0006-traefik-service.yaml**": set "**service.beta.kubernetes.io/aws-load-balancer-ssl-cert**" to cerfiticate_arn of your AWS Certificate
+- Edit "**006-traefik-service.yaml**": set "**service.beta.kubernetes.io/aws-load-balancer-ssl-cert**" to cerfiticate_arn of your AWS Certificate
+
+- Edit "**300-traefik-ingress.yaml**": replace "**users.skycomposer.net**" with the name of your registered domain
 
 - go back to "**terraform**" directory and run the following commands:
 ``` 
