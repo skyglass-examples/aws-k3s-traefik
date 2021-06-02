@@ -215,7 +215,7 @@ docker push test/user-management:1.0.0
 
 
 
-## Step-04: Deploy "user-management" microservice to AWS:
+## Step-04: Deploy "user-management" and "whoami" microservices with Traefik Ingress Controller to AWS:
 
 - go to "**EC2 -> Load Balancers**" in your AWS Console
 
