@@ -1,8 +1,8 @@
 # User Management Microservice
 
-REST API for **user management** microservice with **Swagger UI** is available on ##### https://users.skycomposer.net/usermgmt/swagger-ui/index.html
+REST API for **user management** microservice with **Swagger UI** is available on: **https://users.skycomposer.net/usermgmt/swagger-ui/index.html**
 
-**Whoami** microservice is available on: ##### https://users.skycomposer.net/whoami
+**Whoami** microservice is available on: **https://users.skycomposer.net/whoami**
 
 # Microservices Deployment on AWS with Terraform and K3S:
 
