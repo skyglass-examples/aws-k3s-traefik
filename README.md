@@ -248,11 +248,11 @@ kubectl apply -f ../k3s-traefik
 
 - let's assume that you correctly registered your domain, created hosted zone, registered AWS SSL Certificate for your domain and created "**CNAME**" record with the name "**users.test.com**" and the value "**mtc-loadbalancer.com**"
 
-- go to "**https://users.test.com/usermgmt/swagger-ui/index.html"
+- go to "**https://users.test.com/usermgmt/swagger-ui/index.html**"
 
 - you should see successfully loaded "**Swagger UI**" page
 
-- go to "**https://users.test.com/whoami"
+- go to "**https://users.test.com/whoami**"
 
 - you should see successfully loaded "**WhoAmI**" page
 
