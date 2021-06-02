@@ -23,7 +23,7 @@ public class SwaggerConfig {
 			"Mykhailo Skliar", "https://github.com/skyglass", "skyglass2001@gmail.com");
 
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-			"User Management 1.0.0: Minimal Kubernetes Cluster on AWS with Terraform and K3S", "Awesome API Description", "1.0",
+			"User Management 1.0.0: Minimal Kubernetes Cluster on AWS with Terraform, K3S and Traefik Ingress Controller", "Awesome API Description", "1.0",
 			"urn:tos", DEFAULT_CONTACT,
 			"Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Arrays.asList());
 

@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: "traefik-lb"
   rules:
-  - host: "keycloak.skycomposer.net"
+  - host: "users.skycomposer.net"
     http:
       paths:
       - path: "/usermgmt"
@@ -30,7 +30,7 @@ metadata:
 spec:
   ingressClassName: "traefik-lb"
   rules:
-  - host: "keycloak.skycomposer.net"
+  - host: "users.skycomposer.net"
     http:
       paths:
       - path: "/whoami"
