@@ -262,8 +262,8 @@ kubectl apply -f ../k3s-traefik
 ### Congratulations! You sucessfully created Minimal Kubernetes Cluster on AWS with Terraform and K3S!
 ### Now you can deploy your own docker containers to this cluster with minimal costs from AWS!
 ### You significantly reduced your AWS bills by removing AWS EKS and NAT gateway!
-### You also implemented Traefik Ingress Controller, which acts as a Gateway Load Balancer for your microservices
-### Now you can add any number of microservices to your K3S Kubernetes Cluster and use only one Gateway Traefik Load Balancer for all these microservices
+### You also implemented Traefik Ingress Controller, which acts as a Gateway API for your microservices
+### Now you can add any number of microservices to your K3S Kubernetes Cluster and use only one Gateway Traefik Controller for all these microservices
 
 
 ## Step-05: Clean-Up:
