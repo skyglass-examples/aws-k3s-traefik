@@ -4,7 +4,7 @@ REST API for **user management** microservice with **Swagger UI** is available o
 
 **Whoami** microservice is available on: **https://users.skycomposer.net/whoami**
 
-# Microservices Deployment on AWS with Terraform and K3S:
+# Microservices Deployment on AWS with Terraform, K3S Kubernetes Cluster and Traefik Ingress Controller:
 
 ## Step 01 - Setup terraform account on AWS 
 #### Skip to Step 02, if you already have working Terraform account with all permissions
