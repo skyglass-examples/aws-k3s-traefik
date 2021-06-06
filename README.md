@@ -106,23 +106,12 @@ aws iam attach-group-policy --group-name Ops-Accounts\
 aws iam attach-group-policy --group-name Ops-Accounts\
  --policy-arn arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess &&\
 aws iam attach-group-policy --group-name Ops-Accounts\
- --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy &&\
-aws iam attach-group-policy --group-name Ops-Accounts\
- --policy-arn arn:aws:iam::aws:policy/AmazonEKSServicePolicy &&\
-aws iam attach-group-policy --group-name Ops-Accounts\
  --policy-arn arn:aws:iam::aws:policy/AmazonVPCFullAccess &&\
 aws iam attach-group-policy --group-name Ops-Accounts\
  --policy-arn arn:aws:iam::aws:policy/AmazonRoute53FullAccess &&\
 aws iam attach-group-policy --group-name Ops-Accounts\
  --policy-arn arn:aws:iam::aws:policy/AmazonS3FullAccess
 
-```
-
-With the new policy created, all that’s left is to attach it to our user group. Run the following command, replacing the token we’ve called {YOUR_POLICY_ARN} with the ARN from your policy:
-
-```
-$ aws iam attach-group-policy --group-name Ops-Accounts \
-   --policy-arn {YOUR_POLICY_ARN}
 ```
 
 #### Creating an S3 Backend for Terraform
